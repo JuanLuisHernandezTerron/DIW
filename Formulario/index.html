@@ -62,21 +62,20 @@
 </body>
 <style>
     
-    #telefono1::after{
+    input:invalid::after{
         color:red;
         font-size: 15px;
         content: "x";
     }
     
-    #telefono1::after:valid{
-        color:green;
+    input:valid::after{
+        color:rgb(16, 255, 88);
         font-size: 15px;
-        content: "✔";
+        content: "✔"; 
     }
 
     form{
-        width: 50%;
-        
+        width: 40%;
     }
 
     
