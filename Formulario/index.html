@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ejercicio</title>
+</head>
+<body>
+    <h1 id="titulo-principal">Ejercicio Formulario</h1>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <label for="prefijo" name="prefijo" title="numero-prefijo" id="label-prefijo">Prefijo</label>
+                    <input type="text" id="prefijo" autocomplete="honorific-prefix" list="prefifo-data" required autofocus><br>
+                    <datalist id="prefifo-data">
+                        <option>Sr</option>
+                        <option>Sra</option>
+                        <option>Dr</option>
+                        <option>Srita</option>
+                        <option>Srito</option>
+                    </datalist>
+                <label for="nombre" name="nombre" title="nombre-usuario" id="label-nombre">Nombre</label>
+                    <input type="text" id="nombre" required><br>
+                <label for="apellidos" name="apellidos" title="apellidos-usuario" id="label-apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" required><br>
+                <label for="email" name="email" title="email-usuario" id="label-email">E-mail</label>
+                    <input type="email" id="email" required><br>
+                <label for="email" name="telefono" title="telefono-usuario" id="label-telefono">Teléfono</label>
+                    <input type="tel" pattern="[0-9]{9}" id="telefono1" required><br>
+                <label for="fecha-nacimiento" name="fecha-nacimiento" title="fechaNacimiento-usuario" id="label-fechaNaci">Fecha Nacimiento</label>
+                    <input type="date" id="fecha-nacimiento"><br>
+                <label for="edad" name="edad" title="edad-usuario" id="label-edad">Edad</label>
+                    <input type="number" max="130" min="16" id="edad"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Adicionales</legend>
+            <label for="color-preferido" name="color" title="color-usuario" id="label-colorPrefe">Color Preferido</label>
+                <input type="color" id="color"><br>
+            <label for="inicio-estudios" name="IniEstudios" title="inicioEstudios-usuario" id="label-estudios">Inicio Estudios</label>
+                <input type="month" max="2022-09" id="InicioEstudios"><br>
+            <label for="pagina-web" name="pagina-web" title="paginaweb-usuario" id="label-paginaWeb">Pagina Web</label>
+                <input type="url" id="webUsuario"><br>
+            <label for="curso-actual" name="cursoActual" title="cursoActual-usuario" id="label-cursoActual">Curso Actual</label><br>
+                <select id="selectorAno">
+                    <option>2021/2022</option>
+                    <option>2022/2023</option>
+                </select><br>    
+                <label for="rango-sastifaccion" name="rangoSastifaccion" title="rango-usuario" id="label-sastifaccion">Rango Sastifaccion </label>
+                <input id="rangoSastifaccion" type="range" min="0" max="10" step="0.05">
+        </fieldset>
+        <fieldset>
+            <legend>Contraseña</legend>
+            <label for="contraseña" name="contraseña" title="contrasena-usuario" id="label-contraseña">Contraseña</label>
+                <input type="password" id="contrasena"><br>
+            <label for="contraseña-segura" name="contraseña-segura" title="Checkseguridad" id="label-terminos">Comprendo la importancia de establecer contraseñas seguras</label><br>
+            <input type="checkbox" id="terminos"><br>
+        </fieldset>
+        <input type="submit" id="enviarFormulario" name="submitFormulario">
+        <input type="reset" id="resetearFormulario" name=" resetFormulario">
+    </form>
+</body>
+<style>
+    
+    #telefono1::after{
+        color:red;
+        font-size: 15px;
+        content: "x";
+    }
+    
+    #telefono1::after:valid{
+        color:green;
+        font-size: 15px;
+        content: "✔";
+    }
+
+    form{
+        width: 50%;
+        
+    }
+
+    
+    input:required{
+        border-color: black;
+    }
+    
+    input:focus{
+        outline: none;
+        border-color:blue;
+    }
+    input{
+        border-color: rgb(125, 124, 124);
+    }
+
+    form:hover{
+        background-color: rgb(114, 107, 137);
+        transition-duration: 2s;
+        zoom: 115%;
+    }
+
+    fieldset:hover{
+        border-color: blue;
+    }
+
+    legend{
+        color:rgb(251, 8, 8);
+    }
+
+    label{
+        color: rgb(17, 85, 1);
+    }
+
+
+    #titulo-principal{
+        text-align: center;
+    }
+    
+    #edad{
+        background-color: red;
+    }
+
+    #edad:active{
+        background-color: green;
+    }
+    
+</style>
+</html>
+    
