@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------------------------------------------------------------------------
+Project: Documentación y Optiización CSS3. Reglas-at. Pseudoelementos
+Version : 1.0
+Last Change: 25.10.2022
+Assigned to: Juan Luis Hernandez terron
+ [TABLA DE CONTENIDOS]
+ 1. Header
+ 2. Navegador
+ 3. Main
+ 4. Footer
+*/
+
+/*1. Header*/
+
+/*2. Navegador*/
+
+nav{
+    height: 100px;
+    background-color: rgb(187, 232, 119);
+    text-align: center;
+}
+
+nav div ul li{
+    display: inline-block;
+    padding: 2%;
+    font-weight: bold;
+}
+
+li:hover{
+transform: scale(1.2);
+}
+
+
+
+/*3.main*/
+
+main{
+    height: 650px;
+    background-color: rgb(225, 238, 218);
+}
+
+main h1{
+    text-align: center;
+    justify-content: center;
+}

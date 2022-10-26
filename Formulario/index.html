@@ -25,29 +25,29 @@
                 <label for="apellidos" name="apellidos" title="apellidos-usuario" id="label-apellidos">Apellidos</label>
                     <input type="text" id="apellidos" required><br>
                 <label for="email" name="email" title="email-usuario" id="label-email">E-mail</label>
-                    <input type="email" id="email" required><br>
+                    <input type="email" id="email" required><span> </span><br>
                 <label for="email" name="telefono" title="telefono-usuario" id="label-telefono">Teléfono</label>
-                    <input type="tel" pattern="[0-9]{9}" id="telefono1" required><br>
+                    <input type="tel" pattern="[0-9]{9}" id="telefono1"><span> </span> <br>
                 <label for="fecha-nacimiento" name="fecha-nacimiento" title="fechaNacimiento-usuario" id="label-fechaNaci">Fecha Nacimiento</label>
-                    <input type="date" id="fecha-nacimiento"><br>
+                    <input type="date" id="fecha-nacimiento"><span> </span><br>
                 <label for="edad" name="edad" title="edad-usuario" id="label-edad">Edad</label>
-                    <input type="number" max="130" min="16" id="edad"><br>
+                    <input type="number" max="130" min="16" id="edad"><span> </span><br>
         </fieldset>
         <fieldset>
             <legend>Datos Adicionales</legend>
             <label for="color-preferido" name="color" title="color-usuario" id="label-colorPrefe">Color Preferido</label>
                 <input type="color" id="color"><br>
             <label for="inicio-estudios" name="IniEstudios" title="inicioEstudios-usuario" id="label-estudios">Inicio Estudios</label>
-                <input type="month" max="2022-09" id="InicioEstudios"><br>
+                <input type="month" max="2022-09" id="InicioEstudios"><span> </span><br>
             <label for="pagina-web" name="pagina-web" title="paginaweb-usuario" id="label-paginaWeb">Pagina Web</label>
-                <input type="url" id="webUsuario"><br>
+                <input type="url" id="webUsuario"><span> </span><br>
             <label for="curso-actual" name="cursoActual" title="cursoActual-usuario" id="label-cursoActual">Curso Actual</label><br>
                 <select id="selectorAno">
                     <option>2021/2022</option>
                     <option>2022/2023</option>
                 </select><br>    
                 <label for="rango-sastifaccion" name="rangoSastifaccion" title="rango-usuario" id="label-sastifaccion">Rango Sastifaccion </label>
-                <input id="rangoSastifaccion" type="range" min="0" max="10" step="0.05">
+                <input id="rangoSastifaccion" type="range" min="0" max="10" step="0.05"><span> </span>
         </fieldset>
         <fieldset>
             <legend>Contraseña</legend>
@@ -62,13 +62,13 @@
 </body>
 <style>
     
-    #telefono1::after{
+    input:invalid + span::after{
         color:red;
         font-size: 15px;
         content: "x";
     }
     
-    #telefono1::after:valid{
+    input:valid + span::after{
         color:green;
         font-size: 15px;
         content: "✔";
@@ -76,7 +76,7 @@
 
     form{
         width: 50%;
-        
+        margin: auto;
     }
 
     
@@ -94,8 +94,9 @@
 
     form:hover{
         background-color: rgb(114, 107, 137);
-        transition-duration: 2s;
-        zoom: 115%;
+        transition-duration: 5s;
+        transform: scale(1.1);
+        
     }
 
     fieldset:hover{
