@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "./assets/css/index.css";
+
+h1,h2{
+    color: blue;
+}
+
+.mobile{
+    display: none;
+}
