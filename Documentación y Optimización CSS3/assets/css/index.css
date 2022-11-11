@@ -13,6 +13,18 @@ Assigned to: Juan Luis Hernandez terron
 /*1. Header*/
 
 /*2. Navegador*/
+@charset "UTF-8";
+@font-face {
+    font-family: "ShadowsIntoLight-Regular";
+    src: url("./../fuentes/ShadowsIntoLight-Regular.ttf");
+}
+.mobile{
+    display: none;
+}
+
+body{
+    -webkit-print-color-adjust : exact !important; 
+}
 
 nav{
     height: 100px;
@@ -23,23 +35,73 @@ nav{
 nav div ul li{
     display: inline-block;
     padding: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
     font-weight: bold;
 }
 
-li:hover{
-transform: scale(1.2);
+a:hover{
+    transform: scale(1.2);
+    color:white;
+    transition-duration: 0.5s;
 }
+
 
 
 
 /*3.main*/
 
 main{
-    height: 650px;
+    height: 800px;
     background-color: rgb(225, 238, 218);
 }
 
-main h1{
+#titulo-principal{
     text-align: center;
-    justify-content: center;
+    padding: 20%;
+}
+
+#titulo-principal h1{
+    backdrop-filter: blur(0.3px);
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: 3%;
+    border-radius: 20px;
+}
+
+h1,h2{
+    color: rgb(127, 187, 127);
+    font-family: "ShadowsIntoLight-Regular";
+}
+
+
+a:nth-of-type(1){
+    color: red;
+}
+a:nth-of-type(2){
+    color: yellow;
+}
+a:nth-of-type(3){
+    color: gray;
+}
+a:nth-of-type(4){
+    color: rgb(171, 146, 190);
+}
+
+a + span::after{
+    content: "🔽";
+}
+p{
+    text-align: center;
+}
+
+a:visited{
+    color: blue;
+}
+/*Footer*/
+footer{
+    height: 100px;
+    background-color: rgb(187, 232, 119);
 }
