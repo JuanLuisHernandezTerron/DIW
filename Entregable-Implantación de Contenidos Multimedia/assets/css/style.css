@@ -1,0 +1,294 @@
+/*--------------------------------------------------------------------------------------------------------------------------------
+Project: UD02-T03 EVALUABLE - LAYOUT RESPONSIVE
+Version : 1.0
+Last Change: 16.11.2022
+Assigned to: Juan Luis Hernandez terron
+ [TABLA DE CONTENIDOS]
+ 0. Body
+ 1. Header
+ 2. Navegador
+ 3. Section
+ 4. Aside
+ 5. Footer
+ 6. Header(MediaQuery)
+ 7. Navegador(MediaQuery)
+ 8. Section(MediaQuery)
+ 9. Aside(MediaQuery)
+ 10. Footer(MediaQuery)
+*/
+/*---------------------0.BODY------------------------------- */
+.container{
+    width: 80%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.7fr 0.2fr 7.5fr 0.1fr;
+}
+/*-------------------------1.HEADER---------------------------*/
+div header{
+    grid-column: 1/3;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(219, 205, 201);
+}
+
+header img{ 
+    width: 10%;
+    transition: 1s ease-in-out;
+    filter: invert(42%) sepia(49%) saturate(4138%) hue-rotate(337deg) brightness(100%) contrast(91%);
+}
+
+header img:hover{
+    width: 11%; 
+    transition-duration: 1s;
+    transform: rotate(360deg);
+}
+
+/*-------------------------2.Navegador---------------------------*/
+nav{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: flex;
+    align-items: stretch;
+    position: sticky;
+    z-index: 1;
+    top: -1%;
+    background-color: rgb(219, 205, 201);
+    min-width: 550px;
+
+}
+    /*--------------------------2.1 LISTA NAVEGADOR------------------------*/
+
+nav ul{
+    width: 100%;
+    display: flex;
+    padding-right: 40px;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 1%;
+    transition: 1s ease-in-out;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+nav ul li:hover{
+    color: rgb(255, 24, 24);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+nav ul li:nth-of-type(7),nav ul li:last-child{
+    justify-content: flex-end;
+}
+
+nav ul li:first-child{
+    margin-left: auto;
+}
+
+nav ul li:nth-of-type(7){
+    margin-left: auto;
+}
+
+span{
+    margin-top: 15px;
+}
+
+nav ul li:nth-of-type(7):hover,nav ul li:last-child:hover{
+    color: rgb(255, 24, 24);
+    transform: none;    
+}
+
+/*--------------------------3.Section------------------------*/
+.section-body{
+    grid-column: 1/2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 205, 201);
+}
+    /*--------------------------3.1 Article(1º)------------------------*/
+.article-1,.article-2{
+    border-top: 2px solid rgb(224, 119, 90);
+    border-right: 2px solid rgb(224, 119, 90);
+    border-bottom: 2px solid rgb(224, 119, 90);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.header-article1,.eventos,.header-article2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img-sec-1,.img-sec-2{
+    width: 80%;
+    display:block;
+    margin:auto;
+    transition: 1s ease-in-out;
+}
+
+.img-sec-1:hover,.img-sec-2:hover{
+    transform: scale(1.02);
+}
+
+.section-article-1,.footer-article-1,.section-article-2,.footer-article-2{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*--------------------------3.2Article(2º)------------------------*/
+.article-2{
+    margin-top: 3%;
+}
+/*-------------------------4.Aside------------------------*/
+.div-asides{
+    grid-column: 2/3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 205, 201);
+}
+.eventos,.tittle-event1,.tittle-event2{
+    text-align: center;
+}
+.tittle-event1,.tittle-event2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+hr{
+    width: 80%;
+    border-color: rgb(216, 168, 155);
+}
+    /*--------------------------4.1 Aside(1º)------------------------*/
+.div-aside-1{
+    margin-bottom: 2%;
+    align-self: flex-start;
+}
+.imagen-aside-1,.imagen-aside-2{
+    width: 50%;
+    display:block;
+    margin:auto;
+    transition: 1s ease-in-out;
+}
+.imagen-aside-1:hover,.imagen-aside-2:hover{
+    transform: scale(1.1);
+    filter: blur(0.9px);
+}
+.body-aside-1,.body-aside-2{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*---------------------------4.2 Aside(2º)------------------------*/
+.div-aside-2{
+    align-self: flex-start;
+}
+/*--------------------------5.Footer------------------------*/
+
+.footer{
+    grid-column: 1/3;
+    grid-row: 4;
+    background-color: rgb(219, 205, 201);
+    display: flex;
+    border-top: 1px solid #fff;
+    z-index: 1;
+}
+/*--------------------------5.1 ListaSobreNosotros------------------------*/
+footer div ul li{
+    list-style: none;
+    margin-top: 5px;
+    display: block;
+
+}
+
+footer div ul li:hover{
+    cursor: pointer;
+}
+
+footer div ul{
+    margin-top: 1%;
+}
+
+.InformaciónWeb{
+    width: 12%;
+    margin-top: 2%;
+}
+/*--------------------------5.2 Logo Footer------------------------*/
+.logo-central{
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    width: 68%;
+}
+.logo-footer{
+    width: 30%;
+}
+.RRSS{
+    width: 20%;
+    align-self: center;
+}
+/*--------------------------5.3 Logos RRSS------------------------*/
+i{
+    padding: 2%;
+}
+i:hover{
+    cursor: pointer;
+}
+
+
+
+/******************************Media Query´s*********************************/
+
+@media only screen and (min-width: 667px) and (max-width: 900px){
+    header img{ 
+        width: 40%;
+    }
+    header img:hover{
+        width: 20%; 
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px){
+/*--------------------------Body(Media Query)------------------------*/
+    .container{
+        width: 100%;
+        margin: none;
+        grid-template-rows: 70px 80px 1350px 900px 170px;
+    }
+/*--------------------------6.Header(Media Query)------------------------*/
+    header img{ 
+        width: 30%;
+    }
+
+    header img:hover{
+        width: 15%; 
+    }
+/*--------------------------7.Nav(Media Query)------------------------*/
+
+    span{
+        margin-top: 10px;
+    }
+/*--------------------------8.Section(Media Query)------------------------*/
+    .section-body{
+        grid-column: 1/3;
+        grid-row: 3;;
+    }
+/*--------------------------9.Aside(Media Query)------------------------*/
+
+    .div-asides{
+        grid-column: 1/3;
+        grid-row: 4;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(219, 205, 201);
+    }
+/*--------------------------10.Footer(Media Query)------------------------*/
+
+    .footer{
+        grid-row: 5;
+    }
+
+}
+
