@@ -47,3 +47,36 @@ header h2{
 header h2:hover{
     color: white;
 }
+
+@keyframes slidein {
+    from {
+      width: 100%;
+      transition: cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    75%{
+        margin-left: 25%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+.anadirEntrada:hover .content::before{
+    content: "AñadirEntrada";
+    animation: 1s slidein;
+}
+
+.content{
+    margin-left: 38%;
+    margin-top: -38%;
+}
+
+.btn-secondary{
+    background-color: none;
+}
+
+.foto-lupa{
+    z-index: 1;
+
+}
