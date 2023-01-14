@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*--------------------------------------------------------------------------------------------------------------------------------
+Project: UD04-T01-EVALUABLE-Blog en Bootstrap
+Version : 1.0
+Last Change: 10.01.2023
+Assigned to: Juan Luis Hernandez terron
+ [TABLA DE CONTENIDOS]
+ 0. Body
+ 1. Header
+ 2. Navegador
+ 3. Section
+ 4. Aside
+ 5. Footer
+ 6. Header(MediaQuery)
+ 7. Navegador(MediaQuery)
+ 8. Section(MediaQuery)
+ 9. Aside(MediaQuery)
+ 10. Footer(MediaQuery)
+*/
+
+/*0.BODY*/
+/*1.HEADER*/
+.logo-header{
+    width: 15%;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(193, 193, 188);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+header img{
+    transition: 0.5s ease-in-out;
+}
+
+.logo-header:hover{
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(313deg) brightness(101%) contrast(103%);
+}
+
+header h2{
+    font-family: 'Permanent Marker', cursive;
+    transition: 0.5s ease-in-out;
+}
+
+header h2:hover{
+    color: white;
+}
