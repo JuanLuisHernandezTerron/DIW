@@ -62,14 +62,20 @@ header h2:hover{
     }
   }
 
+.anadirEntrada,.content{
+    transition: 0.5s ease-in-out;
+    color: aliceblue;
+}
+
 .anadirEntrada:hover .content::before{
-    content: "AñadirEntrada";
+    content: "Añadir Entrada";
     animation: 1s slidein;
 }
 
 .content{
+    white-space: nowrap;
     margin-left: 38%;
-    margin-top: -38%;
+    margin-top: -33%;
 }
 
 .btn-secondary{
@@ -78,5 +84,13 @@ header h2:hover{
 
 .foto-lupa{
     z-index: 1;
+    color: aliceblue;
+}
 
+.inputTxt{
+    margin-top: 3%;
+}
+
+.div{
+    color: aliceblue;
 }
