@@ -24,7 +24,7 @@
             </div>
         </header>
         <div class="row">
-            <nav class="col-12 navbar-expand-sm navbar navbar-dark bg-dark">
+            <nav class="col-12 navbar-expand-md navbar navbar-dark bg-dark">
                 <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body navbar-expand-sm">
+                    <div class="offcanvas-body navbar-expand-md">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 me-auto mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item">
                                 <a href="" class="nav-link active" aria-current="page">Register</a>
@@ -47,25 +47,25 @@
                             <li class="nav-item">
                                 <a href="" class="nav-link active" aria-current="page">Tienda</a>
                             </li>
-                            <li class="nav-item anadirEntrada d-block">
-                                <i class="bi bi-plus-circle text-green"></i>
+                            <li class="nav-item mt-1 ms-2 anadirEntrada d-block">
+                                <i class="bi bi-plus-circle logoPlus"></i>
                                 <p class="content"></p>
                             </li>
-                            <li class="nav-item d-block">
+                            <li class="nav-item d-block buscadores">
                                 <p>
-                                    <span class="ms-5 div d-none d-sm-inline">|</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="button" width="20" height="40" fill="currentColor" class="bi bi-search ms-5 foto-lupa" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
+                                    <span class="ms-5 div d-none d-md-inline">|</span>
+                                    <span class="ms-5 d-md-none">Crear Nueva Entrada</span>
+                                    <br class="d-md-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="button" width="20" height="40" fill="currentColor" class="bi bi-search ms-sm-2 ms-lg-5 foto-lupa" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>
                                 </p>
                             </li>
                             <li class="nav-item ms-4 w-auto d-sm-block d-md-inline">
-                                <div class="">
-                                    <div class="collapse collapse-horizontal inputTxt" id="search">
-                                        <input placeholder="Buscame...." type="text" name="buscado" id="buscadorSearch">
-                                        <div class="d-inline" data-bs-theme="dark">
-                                            <button type="button" class="btn-close ms-2" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#search"></button>
-                                        </div>
+                                <div class="collapse collapse-horizontal inputTxt" id="search">
+                                    <input placeholder="Buscame...." type="text" name="buscado" id="buscadorSearch">
+                                    <div class="d-inline" data-bs-theme="dark">
+                                        <button type="button" class="btn-close ms-2" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#search"></button>
                                     </div>
                                 </div>
                             </li>
