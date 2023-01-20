@@ -102,3 +102,16 @@ header h2:hover{
 .div{
     color: aliceblue;
 }
+
+@media only screen and (max-width: 768px){
+    .parrafoInput{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .anadirEntrada:hover .content::before{
+       display: none;
+    }
+}
