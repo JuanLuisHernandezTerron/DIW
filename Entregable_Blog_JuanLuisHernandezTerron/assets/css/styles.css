@@ -24,6 +24,8 @@ Assigned to: Juan Luis Hernandez terron
 .logo-header{
     width: 15%;
     margin: auto;
+    max-width: 300px;
+    min-width: 200px;
 }
 
 header{
@@ -124,4 +126,55 @@ header h2:hover{
 a{
     color: black;
     text-decoration: none !important;
+}
+
+/*4.Section*/
+hr{
+    width: 80%;
+}
+.body{
+    background-color: rgb(193, 193, 188);
+}
+
+.section-tittle{
+    font-family: 'Permanent Marker', cursive;
+}
+/*Eventos*/
+/*Evento-1*/
+.imagenEvent1{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid black;
+
+}
+
+.infoIMG1{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid black;
+}
+
+.hoverInfo1{
+    transition: 0.5s ease-in-out;
+}
+
+.hoverInfo1:hover{
+    transform: scale(1.02);
+}
+/*Evento-2*/
+.imagenEvent2{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid black;
+}
+
+.hoverInfo2{
+    transition: 0.5s ease-in-out;
+}
+
+.hoverInfo2:hover{
+    transform: scale(1.02);
 }
