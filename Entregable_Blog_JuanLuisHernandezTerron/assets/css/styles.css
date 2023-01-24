@@ -178,3 +178,62 @@ hr{
 .hoverInfo2:hover{
     transform: scale(1.02);
 }
+
+/*5.Aside*/
+.img-banner{
+    min-width: 150px;
+    max-width: 350px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tittle-aside{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.redes{
+    font-size: 35px;
+}
+
+
+@media only screen and (max-width: 1170px){
+    .tittle-aside{
+        font-size: 30px;
+    }
+
+    .redes{
+        font-size: 30px;
+    }
+}
+
+.introSlide{
+    color: rgb(235, 225, 98);
+}
+
+.texto-slide{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*6.Footer*/
+footer{
+    background-color: black;
+}
+
+.footer-p, .list-group-item{
+    color: white;
+}
+
+.list-group-item{
+    background-color: black;
+    border-width: 10%;
+}
+
+.logo-footer{
+    width: 15%;
+    max-width: 35px;
+    min-width: 20px;
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(313deg) brightness(101%) contrast(103%);
+}
