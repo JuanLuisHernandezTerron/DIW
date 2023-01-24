@@ -109,16 +109,19 @@ header h2:hover{
 }
 
 @media only screen and (max-width: 768px){
+
+    .anadirEntrada:hover .content::before{
+       display: none;
+    }
+
     .parrafoInput{
         margin-bottom: 0px;
     }
 }
 
-@media only screen and (max-width: 768px){
-
-    .anadirEntrada:hover .content::before{
-       display: none;
-    }
+.enlaceOlvido{
+    color: rgb(81, 81, 224);
+    font-size: 10px;
 }
 
 /*3.Migas de pan*/
@@ -197,15 +200,14 @@ hr{
     font-size: 35px;
 }
 
+.openSesion{
+    font-size: 14px;
+}
 
-@media only screen and (max-width: 1170px){
-    .tittle-aside{
-        font-size: 30px;
-    }
-
-    .redes{
-        font-size: 30px;
-    }
+.login{
+    height: 35px;
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 .introSlide{
@@ -236,4 +238,18 @@ footer{
     max-width: 35px;
     min-width: 20px;
     filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(313deg) brightness(101%) contrast(103%);
+}
+
+@media only screen and (max-width: 1170px){
+    .tittle-aside{
+        font-size: 30px;
+    }
+
+    .redes{
+        font-size: 30px;
+    }
+
+    .footer-p, .list-group-item{
+        font-size: 12px;
+    }
 }
