@@ -84,13 +84,68 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <h2 class="text-center section-tittle">Entradas</h2>
+                    <h2 class="text-center section-tittle">Registro</h2>
                     <hr class="m-auto">
-                    <!--Eventos INICIO 2 filas y por cada filas 2 eventos-->
-                    <div class="row">
-                        
+                    <form action="">
+                    <div class="row mt-2 ms-5">
+                        <div class="col-12 col-lg-3">
+                            <label for="">Nombre</label><span>*</span><br>
+                            <input type="text" class="w-100 w-lg-50">
+                        </div>
+                        <div class="col-12 col-lg-4 d-inline">
+                            <label for="">Apellidos</label><span>*</span><br>
+                            <input type="text" class="w-100">
+                        </div>
+                        <div class="col-12 col-lg-5 d-inline">
+                            <label for="">Email</label><span>*</span><br>
+                            <input type="text" class="w-100">
+                        </div>
                     </div>
-                    <!--Eventos Fin-->
+                    <div class="row mt-2 ms-5">
+                        <div class="col-12 col-lg-6">
+                            <label for="">Dirección</label><br>
+                            <input type="text" class="w-100">
+                        </div>
+                        <div class="col-12 col-lg-6 d-inline">
+                            <label for="">Código Postal</label><br>
+                            <input type="text" class="w-100" data-toggle="tooltip" data-placement="bottom" title="Recuerda introducir 5 digitos. EJ:41930">
+                        </div>
+                    </div>
+                    <div class="row mt-2 ms-5">
+                        <div class="col-12 col-lg-4">
+                            <label for="">Comunidad Autónoma</label><br>
+                            <input type="text" class="w-100">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <label for="">Provincia</label><br>
+                            <input type="text" class="w-100">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <label for="">Ciudad</label><br>
+                            <input type="text" class="w-100">
+                        </div>
+                    </div>
+                    <div class="row mt-2 ms-5">
+                        <div class="col-12">
+                            <label for="">Descríbete</label><br>
+                            <textarea name="" id="" class="w-100" rows="5"></textarea>
+                        </div>
+                        <label for="">Red Social</label><br>
+                        <div class="input-group col-12 col-lg-7">
+                            
+                            <span class="input-group-text d-inline" id="basic-addon1">https://instagram.com/</span>
+                            <input type="text" class="w-50" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="row mt-5 ms-5 text-center">
+                        <div class="col-6">
+                           <button type="button" class="w-50 cancelar">Cancelar</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="submit" class="w-50 enviar">Enviar</button>
+                        </div>
+                    </div>
+                </form>
                 </div>
                 <div class="col-12 col-md-4 g-2">
                     <div class="row">
@@ -203,12 +258,18 @@
             </div>
             <div class="modal-body text-center">
                 <form action="">
-                    <input placeholder="Username" class="mb-3 w-50" type="text"><br>
-                    <input placeholder="Password" class="w-50 mb-2" type="password"><br>
+                    <div class="input-group w-50 m-auto">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div><br>
+                      <div class="input-group w-50 m-auto">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="form-control mb-0" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                      </div><br>
                     <input type="checkbox" name="checboxLogin" id="loginCheck">
                     <label class="mb-3 openSesion" for="">Session Open</label>
                     <a class="ms-2 enlaceOlvido" href="">¿Has olvidado la contrasaña?</a><br>
-                    <input class="text-center login w-50" type="button" value="Login">
+                    <input class="text-center login w-50" type="button" value="Login" data-bs-dismiss="modal" aria-label="Close">
                 </form>
             </div>
           </div>

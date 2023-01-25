@@ -12,6 +12,7 @@ Assigned to: Juan Luis Hernandez terron
  3. Section
  4. Aside
  5. Footer
+ 7. Registro
  6. Header(MediaQuery)
  7. Navegador(MediaQuery)
  8. Section(MediaQuery)
@@ -252,4 +253,21 @@ footer{
     .footer-p, .list-group-item{
         font-size: 12px;
     }
+}
+
+/*7.Registro*/
+.cancelar{
+    height: 50px;
+    background-color: rgb(236, 135, 135);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.enviar{
+    height: 50px;
+    background-color: rgb(151, 228, 132);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
 }

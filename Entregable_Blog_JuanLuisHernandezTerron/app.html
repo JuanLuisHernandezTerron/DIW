@@ -243,12 +243,18 @@
             </div>
             <div class="modal-body text-center">
                 <form action="">
-                    <input placeholder="Username" class="mb-3 w-50" type="text"><br>
-                    <input placeholder="Password" class="w-50 mb-2" type="password"><br>
+                    <div class="input-group w-50 m-auto">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div><br>
+                      <div class="input-group w-50 m-auto">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="form-control mb-0" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                      </div><br>
                     <input type="checkbox" name="checboxLogin" id="loginCheck">
                     <label class="mb-3 openSesion" for="">Session Open</label>
                     <a class="ms-2 enlaceOlvido" href="">¿Has olvidado la contrasaña?</a><br>
-                    <input class="text-center login w-50" type="button" value="Login">
+                    <input class="text-center login w-50" type="button" value="Login" data-bs-dismiss="modal" aria-label="Close">
                 </form>
             </div>
           </div>
