@@ -54,7 +54,6 @@ Assigned to: Juan Luis Hernandez terron
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
-    position: fixed;
     bottom: 0;
     border-radius: 20px;
     font-size: 25px;
