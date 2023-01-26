@@ -2,22 +2,17 @@
 /*--------------------------------------------------------------------------------------------------------------------------------
 Project: UD04-T01-EVALUABLE-Blog en Bootstrap
 Version : 1.0
-Last Change: 10.01.2023
+Last Change: 26.01.2023
 Assigned to: Juan Luis Hernandez terron
  [TABLA DE CONTENIDOS]
  0. Body
  1. Header
  2. Navegador
  3. Migas de Pan
- 3. Section
- 4. Aside
- 5. Footer
+ 4. Section
+ 5. Aside
+ 6. Footer
  7. Registro
- 6. Header(MediaQuery)
- 7. Navegador(MediaQuery)
- 8. Section(MediaQuery)
- 9. Aside(MediaQuery)
- 10. Footer(MediaQuery)
 */
 
 /*0.BODY*/
@@ -35,7 +30,7 @@ header{
     border-top-right-radius: 5px;
 }
 
-header img{
+header img,.hoverInfo1{
     transition: 0.5s ease-in-out;
 }
 
@@ -48,7 +43,7 @@ header h2{
     transition: 0.5s ease-in-out;
 }
 
-header h2:hover{
+header h2:hover,.footer-p, .list-group-item{
     color: white;
 }
 
@@ -92,17 +87,9 @@ header h2:hover{
     margin-top: -33%;
 }
 
-.btn-secondary{
-    background-color: none;
-}
-
 .foto-lupa{
     z-index: 1;
     color: aliceblue;
-}
-
-.inputTxt{
-    margin-top: 3%;
 }
 
 .div{
@@ -126,7 +113,6 @@ header h2:hover{
 }
 
 /*3.Migas de pan*/
-
 a{
     color: black;
     text-decoration: none !important;
@@ -136,6 +122,7 @@ a{
 hr{
     width: 80%;
 }
+
 .body{
     background-color: rgb(193, 193, 188);
 }
@@ -160,11 +147,7 @@ hr{
     border: 1px solid black;
 }
 
-.hoverInfo1{
-    transition: 0.5s ease-in-out;
-}
-
-.hoverInfo1:hover{
+.hoverInfo1:hover,.hoverInfo2:hover{
     transform: scale(1.02);
 }
 /*Evento-2*/
@@ -176,10 +159,6 @@ hr{
 
 .hoverInfo2{
     transition: 0.5s ease-in-out;
-}
-
-.hoverInfo2:hover{
-    transform: scale(1.02);
 }
 
 /*5.Aside*/
@@ -222,10 +201,6 @@ hr{
 /*6.Footer*/
 footer{
     background-color: black;
-}
-
-.footer-p, .list-group-item{
-    color: white;
 }
 
 .list-group-item{
@@ -275,15 +250,6 @@ footer{
     border-radius: 15px;
 }
 
-/*Boton Up*/
-
-.ir-arriba{
-    background-repeat:no-repeat;
-    font-size:20px;
-    color:white;
-    cursor:pointer;
-    position:fixed;
-    bottom:10px;
-    right:10px;
-    z-index:2;
-  }
+.form-control,.input-group-text{
+    height: 30px;
+}
