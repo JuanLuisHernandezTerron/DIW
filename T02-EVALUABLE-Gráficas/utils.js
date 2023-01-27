@@ -20,7 +20,8 @@
       plugins: {
         title: {
             display: true,
-            text: 'Gráfico lineal'
+            text: 'Gráfico lineal',
+            color:'green'
         },
         subtitle: {
           display: true,
@@ -54,7 +55,8 @@ var mixedChart = new Chart(ctx2, {
     plugins: {
       title: {
           display: true,
-          text: 'Grafico MultiLinea'
+          text: 'Grafico MultiLinea',
+          color: 'red'
       },
       subtitle: {
         display: true,
@@ -91,7 +93,8 @@ var rosco = new Chart(ctx3,{
     plugins: {
         title: {
             display: true,
-            text: 'Grafico de Torta/Rosco'
+            text: 'Grafico de Torta/Rosco',
+            color:'blue'
         },
         subtitle: {
           display: true,
@@ -102,6 +105,16 @@ var rosco = new Chart(ctx3,{
 })
 
 const ctx4 = document.getElementById("horizontal");
+const label = [     'Maraton Madrid',
+              'Media Maraton Barcelona',
+              'Carrera Nocturna Sevilla',
+              'Maraton de Badajoz',
+              'Ibiza Maraton',
+              'Marató d Empúries',
+              'Lanzarote Marathon'
+            ]
+const number = [11256, 15236, 7421, 1586, 3652, 5541, 6521]
+const allData = [];
 
 var horizontal = new Chart(ctx4,{
   type:'bar', 
