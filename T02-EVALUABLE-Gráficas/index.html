@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <script defer src="./utils.js"></script>
     <title>Gráficas</title>
 </head>
-    <div class="primero">
-        <canvas id="myChart"></canvas>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 primero">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-md-6 primero">
+            <canvas id="linealYbarra"></canvas>
+        </div>
     </div>
-    <div class="primero">
-        <canvas id="linealYbarra"></canvas>
+    <div class="row">
+        <div class="col-md-6 primero">
+            <canvas id="rosco"></canvas>
+        </div>
+        <div class="col-md-6 primero">
+            <canvas id="horizontal"></canvas>
+        </div>
     </div>
-    <div class="primero">
-        <canvas id="rosco"></canvas>
-    </div>
-    <div class="primero">
-        <canvas id="horizontal"></canvas>
-    </div>
+</div>
+<script src="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

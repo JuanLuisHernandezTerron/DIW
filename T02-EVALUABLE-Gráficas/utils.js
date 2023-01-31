@@ -131,7 +131,7 @@ var horizontal = new Chart(ctx4,{
     datasets: [{
       axis: 'y',
       label: 'Inscritos Runners Eventos',
-      data: [11256, 15236, 7421, 1586, 3652, 5541, 6521],
+      data: [15236, 11542, 11201, 9502, 6021, 5541, 3215],
       fill: false,
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
