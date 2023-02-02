@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <header class="row justify-content-center text-center">
             <div class="row col-12 text-center">
-                <img class="logo-header img-fluid" src="./assets/images/26502001a00415391db0e8bedb1a1d57.svg" alt="">
+                <img class="logo-header img-fluid" src="./assets/images/26502001a00415391db0e8bedb1a1d57.svg" alt="logo runner web">
             </div>
             <div class="row col-12">
                 <h2 class="col-12">RUNNERS</h2>
@@ -44,15 +44,15 @@
                                 <a href="./app.html" class="nav-link active" aria-current="page">Entradas</a>
                             </li>
                             <li class="nav-item mt-md-1 ms-2 mb-2 anadirEntrada d-block ms-md-3">
-                                <i class="bi bi-plus-circle logoPlus"></i>
+                                <i class="bi bi-plus-circle logoPlus" aria-label="Añadir nueva entrada"></i>
                                 <p class="content"></p>
                             </li>
                             <li class="nav-item d-block buscadores justify-content-center align-items-center ms-md-3">
                                 <p class="parrafoInput">
                                     <span class="ms-5 div d-none d-md-inline">|</span>
-                                    <span class="ms-5 d-md-none">Crear Nueva Entrada</span>
+                                    <span class="ms-5 d-md-none" aria-label="Crear nueva entrada">Crear Nueva Entrada</span>
                                     <br class="d-md-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="button" width="20" height="40" fill="currentColor" class="bi bi-search ms-2 ms-md-5 foto-lupa" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-label="lupa-buscador" role="button" width="20" height="40" fill="currentColor" class="bi bi-search ms-2 ms-md-5 foto-lupa" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>
                                     <span class="ms-5 d-md-none">Buscador</span>
@@ -86,62 +86,62 @@
                 <div class="col-12 col-md-8">
                     <h2 class="text-center section-tittle">Registro</h2>
                     <hr class="m-auto">
-                    <form action="">
+                <form action="">
                     <div class="row mt-2 ms-md-5">
                         <div class="col-12 col-lg-3">
-                            <label for="">Nombre</label><span>*</span><br>
-                            <input type="text" class="w-100 w-lg-50">
+                            <label for="Nombre">Nombre</label><span>*</span><br>
+                            <input type="text" id="Nombre" class="w-100 w-lg-50">
                         </div>
                         <div class="col-12 col-lg-4 d-inline">
-                            <label for="">Apellidos</label><span>*</span><br>
-                            <input type="text" class="w-100">
+                            <label for="Apellidos">Apellidos</label><span>*</span><br>
+                            <input type="text" id="Apellidos" class="w-100">
                         </div>
                         <div class="col-12 col-lg-5 d-inline">
-                            <label for="">Email</label><span>*</span><br>
+                            <label for="email">Email</label><span>*</span><br>
                             <div class="input-group w-100">
                                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-at"></i></span>
-                                <input type="text" class="form-control w-25" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control w-25" id="email" aria-describedby="basic-addon1">
                             </div>
                         </div>
                     </div>
                     <div class="row mt-2 ms-md-5">
                         <div class="col-12 col-lg-6">
-                            <label for="">Dirección</label><br>
+                            <label for="direccion">Dirección</label><br>
                             <div class="input-group w-100">
                                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-geo-fill"></i></span>
-                                <input type="text" class="form-control w-25" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control w-25" id="direccion" aria-describedby="basic-addon1">
                             </div>
 
                           </div>
                         <div class="col-12 col-lg-6 d-inline">
-                            <label for="">Código Postal</label><br>
-                            <input type="text" class="w-100" data-toggle="tooltip" data-placement="bottom" title="Recuerda introducir 5 digitos. EJ:41930">
+                            <label for="cp">Código Postal</label><br>
+                            <input type="text" class="w-100" data-toggle="tooltip" id="cp" data-placement="bottom" title="Recuerda introducir 5 digitos. EJ:41930">
                         </div>
                     </div>
                     <div class="row mt-2 ms-md-5">
                         <div class="col-12 col-lg-4">
-                            <label for="">Comunidad Autónoma</label><br>
-                            <input type="text" class="w-100">
+                            <label for="ca">Comunidad Autónoma</label><br>
+                            <input type="text" id="ca" class="w-100">
                         </div>
                         <div class="col-12 col-lg-4">
-                            <label for="">Provincia</label><br>
-                            <input type="text" class="w-100">
+                            <label for="pro">Provincia</label><br>
+                            <input type="text" id="pro" class="w-100">
                         </div>
                         <div class="col-12 col-lg-4">
-                            <label for="">Ciudad</label><br>
-                            <input type="text" class="w-100">
+                            <label for="ci">Ciudad</label><br>
+                            <input type="text" id="ci" class="w-100">
                         </div>
                     </div>
                     <div class="row mt-2 ms-md-5">
                         <div class="col-12">
-                            <label for="">Descríbete</label><br>
-                            <textarea name="" id="" class="w-100" rows="5"></textarea>
+                            <label for="desc">Descríbete</label><br>
+                            <textarea name="" id="desc" class="w-100" rows="5"></textarea>
                         </div>
-                        <label for="">Red Social</label><br>
+                        <label for="rrss">Red Social</label><br>
                         <div class="input-group col-12 col-lg-7">
                             
                             <span class="input-group-text d-inline" id="basic-addon1">https://instagram.com/</span>
-                            <input type="text" class="w-50" aria-describedby="basic-addon1">
+                            <input type="text" id="rrss" class="w-50" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="row mt-5 ms-5 text-center">
@@ -160,7 +160,7 @@
                     </div>
                     <hr class="m-auto mb-2">
                     <div class="row justify-content-center ">
-                        <img class="img-fluid w-100 img-banner" src="./assets/images/seville-106852_960_720.png" alt="img-torreSevilla" />
+                        <img class="img-fluid w-100 img-banner" src="./assets/images/seville-106852_960_720.png" alt="Foto de la torre del oro de sevilla, con descuentos sobre variados maratones / carreras" />
                     </div>
                     <div class="row mt-5">
                         <h2 class="text-center tittle-aside m-md-0">Redes Sociales</h2>
@@ -168,10 +168,10 @@
                     <hr class="m-auto mb-2">
                     <div class="row">
                         <div class="col-12 d-block d-md-inline text-center">
-                            <i class="bi bi-facebook redes"></i>
-                            <i class="bi bi-instagram redes ms-3"></i>
-                            <i class="bi bi-youtube redes ms-3"></i>
-                            <i class="bi bi-linkedin redes ms-3"></i>
+                            <i class="bi bi-facebook redes" aria-label="facebook"></i>
+                            <i class="bi bi-instagram redes ms-3" aria-label="instagram"></i>
+                            <i class="bi bi-youtube redes ms-3" aria-label="youtube"></i>
+                            <i class="bi bi-linkedin redes ms-3" aria-label="link edin"></i>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -188,21 +188,21 @@
                                 </div>
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
-                                    <img src="./assets/images/woman-g2d2f2efa9_1920.jpg" class="d-block w-100">
+                                    <img src="./assets/images/woman-g2d2f2efa9_1920.jpg" class="d-block w-100" alt="mujer-corriendo-presencia mujeres aumenta">
                                     <div class="carousel-caption">
                                       <h5 class="introSlide">La presencia de mujeres in crescendo</h5>
                                       <p class="texto-slide text-truncate">El porcentaje de mujeres aumenta de manera exponencial</p>
                                     </div>
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="./assets/images/stopwatch-g03c042216_1920 (1).jpg" class="d-block w-100" alt="...">
+                                    <img src="./assets/images/stopwatch-g03c042216_1920 (1).jpg" class="d-block w-100" alt="reloj-tiempo correr correcto">
                                     <div class="carousel-caption">
                                       <h5 class="introSlide">¿Tiempo para correr?</h5>
                                       <p class="texto-slide text-truncate">El trabajo diario siempre dure más de 45 minutos. Así se puede quemar grasa</p>
                                     </div>
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="./assets/images/joy-g52f2ddb4c_1920.jpg" class="d-block w-100" alt="...">
+                                    <img src="./assets/images/joy-g52f2ddb4c_1920.jpg" class="d-block w-100" alt="Niña corriendo- obesidad infantil">
                                     <div class="carousel-caption">
                                       <h5 class="introSlide">Obesidad Infantil</h5>
                                       <p class="texto-slide text-truncate">La obesidad infantil es una afección de salud grave que afecta a niños y adolescentes.</p>
@@ -250,8 +250,8 @@
                         <p class="ms-lg-5">Carrera15Kms</p>
                     </div>
                     <div class="col-2 text-center">
-                           <img class="logo-footer" src="./assets/images/icons8-copyleft-30.png" alt="" srcset="">
-                           <p class="footer-p">CopyLeft</p>
+                           <img class="logo-footer" src="./assets/images/icons8-copyleft-30.png" alt="copy left" srcset="">
+                           <p class="footer-p" arial-label="copy left">CopyLeft</p>
                     </div>
                 </div>
                 <hr class="m-auto mb-2 hr-footer">
