@@ -16,6 +16,13 @@ Assigned to: Juan Luis Hernandez terron
 */
 
 /*0.BODY*/
+p,h5,hr{
+    color: rgb(0, 0, 0);
+
+}
+.icons{
+    color: rgb(0, 0, 0) !important;
+}
 .content2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
@@ -127,6 +134,7 @@ header h2:hover,.footer-p, .list-group-item{
 
 .foto-lupa{
     z-index: 1;
+    font-size: 120%;
     color: aliceblue;
 }
 
@@ -159,6 +167,7 @@ a{
 /*4.Section*/
 hr{
     width: 80%;
+    border: 2px solid ;
 }
 
 .body{

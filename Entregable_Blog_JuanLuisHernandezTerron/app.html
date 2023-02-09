@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./../light-switch-bootstrap/custom.css">
     <script defer src="./assets/js/utils.js"></script>
     <title>Eventos Nexo Runnig</title>
 </head>
@@ -17,7 +18,7 @@
     <!--INICIO-VIDEO-->
     <div class="container-fluid" id="body-video">
         <div class="row">
-            <div class="col-12" id="video">
+            <div class="col-10" id="video">
                 <button type="button" id="boton" class="btn-close" data-bs-dismiss="button" aria-label="Close"></button>
                 <video autoplay loop id="myVideo" class="w-100" controls>
                     <source class="video" src="./assets/images/Vídeo sin título ‐ Hecho con Clipchamp.mp4" type="video/mp4">
@@ -26,10 +27,13 @@
                     <p>!RUNNERS , TU ORGANIZADOR DE EVENTOS PREFERIDO¡</p>
                 </div>
             </div>
+            <div class="col-2">
+                
+            </div>
         </div>
     </div>
     <!--Fin-video-->
-    <div id="body" class="container-fluid">
+    <div id="body" class="container-fluid bg-dark">
         <header class="row justify-content-center text-center">
             <div class="row col-12 text-center">
                 <img class="logo-header img-fluid" src="./assets/images/26502001a00415391db0e8bedb1a1d57.svg" alt="logo runner web">
@@ -39,7 +43,7 @@
             </div>
         </header>
         <div class="row sticky-top">
-            <nav class="col-12 navbar-expand-md navbar navbar-dark bg-dark ">
+            <nav class="col-12 navbar-expand-md navbar navbar-dark bg-dark">
                 <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -51,26 +55,24 @@
                     <div class="offcanvas-body navbar-expand-md">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 me-auto mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item">
-                                <a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#LoginModal" aria-current="page">Login</a>
+                                <a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#LoginModal" aria-current="page" >Login</a>
                             </li>
                             <li class="nav-item ms-md-3">
-                                <a href="./register.html" class="nav-link active" aria-current="page">Register</a>
+                                <a href="./register.html" class="nav-link active"  aria-current="page">Register</a>
                             </li>
                             <li class="nav-item ms-md-3">
-                                <a href="" class="nav-link active" aria-current="page">Entradas</a>
+                                <a href="" class="nav-link active" aria-current="page" >Entradas</a>
                             </li>
                             <li class="nav-item mt-md-1 ms-2 mb-2 anadirEntrada d-block ms-md-3">
-                                <i class="bi bi-plus-circle logoPlus"></i>
-                                <p class="content"></p>
+                                <i class="bi bi-plus-circle logoPlus text-light"></i>
+                                <p class="content" ></p>
                             </li>
                             <li class="nav-item d-block buscadores justify-content-center align-items-center ms-md-3">
                                 <p class="parrafoInput">
-                                    <span class="ms-5 div d-none d-md-inline">|</span>
+                                    <span class="ms-5 div d-none d-md-inline text-light">|</span>
                                     <span class="ms-5 d-md-none">Crear Nueva Entrada</span>
                                     <br class="d-md-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" role="button" width="22" height="40" fill="currentColor" class="bi bi-search ms-2 ms-md-5 foto-lupa" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                    </svg>
+                                    <i class="bi bi-search mt-2 ms-2 ms-md-5 foto-lupa text-light" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search"></i>
                                     <span class="ms-5 d-md-none">Buscador</span>
                                 </p>
                             </li>
@@ -81,6 +83,12 @@
                                         <button type="button" class="btn-close ms-2" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#search"></button>
                                     </div>
                                 </div>
+                            </li>
+                            <li class="nav-item justify-content-right w-auto d-sm-block d-md-inline">
+                                <div class="form-check form-switch">
+                                    <label class="form-check-label" for="lightSwitch"> Dark Mode </label>
+                                    <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                                  </div>
                             </li>
                         </ul>
                     </div>
@@ -99,7 +107,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <h2 class="text-center section-tittle">Entradas</h2>
+                    <h2 class="text-center section-tittle text-dark">Entradas</h2>
                     <hr class="m-auto">
                     <!--Eventos INICIO 2 filas y por cada filas 2 eventos-->
                     <div class="row mb-2">
@@ -113,10 +121,10 @@
                                         <p class="ms-3 text-start mb-0">Media Maratón</p>
                                     </div>
                                     <div class="col-2">
-                                        <i class="bi bi-eye"><span classs="text-end" aria-label="75 visitas">75</span></i>
+                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="75 visitas">75</span></i>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-suit-heart-fill"><span class="text-end me-1" aria-label="10 favoritos">10</span></i>
+                                        <i class="bi bi-suit-heart-fill icons"><span class="text-end me-1" aria-label="10 favoritos">10</span></i>
                                     </div>
                                 </div>
                                 <h5>Media Maratón Madrid</h5>
@@ -127,7 +135,7 @@
                                         <p class="ms-3">#Maraton #Madrid #Enero</p>
                                     </div>
                                     <div class="col-4 pe-5">
-                                        <i class="bi bi-chat-left-dots"><span class="text-end me-1 ms-1" aria-label="200 comentarios">200</span></i>
+                                        <i class="bi bi-chat-left-dots icons"><span class="text-end me-1 ms-1" aria-label="200 comentarios">200</span></i>
                                     </div>
                                 </div>
                             </div>
@@ -142,10 +150,10 @@
                                         <p class="ms-3 text-start mb-0">Maratón</p>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-eye"><span classs="text-end" aria-label="10563 visitas">10563</span></i>
+                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="10563 visitas">10563</span></i>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-suit-heart-fill"><span class="text-end me-1" aria-label="1522 favoritos">1522</span></i>
+                                        <i class="bi bi-suit-heart-fill icons"><span class="text-end me-1" aria-label="1522 favoritos">1522</span></i>
                                     </div>
                                 </div>
                                 <h5>Maratón Barcelona</h5>
@@ -158,7 +166,7 @@
                                         <p class="">#Maraton #Barcelona</p>
                                     </div>
                                     <div class="col-5 pe-4">
-                                        <i class="bi bi-chat-left-dots"><span class="text-end me-1 ms-1" aria-label="788 comentarios">788</span></i>
+                                        <i class="bi bi-chat-left-dots icons"><span class="text-end me-1 ms-1" aria-label="788 comentarios">788</span></i>
                                     </div>
                                 </div>
                             </div>
@@ -175,10 +183,10 @@
                                         <p class="ms-3 text-start mb-0">Carrera Popular</p>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-eye"><span classs="text-end" aria-label="5523 visitas">5523</span></i>
+                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="5523 visitas">5523</span></i>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-suit-heart-fill"><span class="text-end me-1 ms-1" aria-label="224 favoritos">224</span></i>
+                                        <i class="bi bi-suit-heart-fill icons"><span class="text-end me-1 ms-1" aria-label="224 favoritos">224</span></i>
                                     </div>
                                 </div>
                                 <h5>Carrera Popular Sevilla</h5>
@@ -191,7 +199,7 @@
                                         <p class="">#Carrera #Sevilla #Popular</p>
                                     </div>
                                     <div class="col-4 pe-4">
-                                        <i class="bi bi-chat-left-dots"><span class="text-end me-1 ms-1" aria-label="26 comentarios">26</span></i>
+                                        <i class="bi bi-chat-left-dots icons"><span class="text-end me-1 ms-1" aria-label="26 comentarios">26</span></i>
                                     </div>
                                 </div>
                             </div>
@@ -206,10 +214,10 @@
                                         <p class="ms-3 text-start mb-0">Media Maratón</p>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-eye"><span classs="text-end" aria-label="150 visitas">150</span></i>
+                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="150 visitas">150</span></i>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-suit-heart-fill"><span class="text-end ms-1 me-1" aria-label="56 favoritos">56</span></i>
+                                        <i class="bi bi-suit-heart-fill icons"><span class="text-end ms-1 me-1" aria-label="56 favoritos">56</span></i>
                                     </div>
                                 </div>
                                 <h5>Media Maratón Torremolinos</h5>
@@ -222,7 +230,7 @@
                                         <p class="ms-1">#Maraton #Malaga #media</p>
                                     </div>
                                     <div class="col-4">
-                                        <i class="bi bi-chat-left-dots"><span class="text-end ms-1 me-1" aria-label="6 comentarios">6</span></i>
+                                        <i class="bi bi-chat-left-dots icons"><span class="text-end ms-1 me-1" aria-label="6 comentarios">6</span></i>
                                     </div>
                                 </div>
                             </div>
@@ -232,14 +240,14 @@
                 </div>
                 <div class="col-12 col-md-4 g-2">
                     <div class="row">
-                        <h2 class="text-center tittle-aside mt-3 m-md-0">Promociones</h2>
+                        <h2 class="text-center tittle-aside mt-3 m-md-0 text-dark">Promociones</h2>
                     </div>
                     <hr class="m-auto mb-2">
                     <div class="row justify-content-center ">
                         <img class="img-fluid w-100 img-banner" src="./assets/images/seville-106852_960_720.png" alt="Foto de la torre del oro de sevilla, con descuentos sobre variados maratones / carreras" />
                     </div>
                     <div class="row mt-5">
-                        <h2 class="text-center tittle-aside m-md-0">Redes Sociales</h2>
+                        <h2 class="text-center tittle-aside m-md-0 text-dark">Redes Sociales</h2>
                     </div>
                     <hr class="m-auto mb-2">
                     <div class="row">
@@ -251,7 +259,7 @@
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <h2 class="text-center tittle-aside m-md-0">Noticias</h2>
+                        <h2 class="text-center tittle-aside m-md-0 text-dark">Noticias</h2>
                     </div>
                     <hr class="m-auto mb-2">
                     <div class="row mt-4 mb-5">
@@ -316,14 +324,14 @@
                           </ul>
                     </div>
                     <div class="col-3 footer-p">
-                        <p class="d-none d-lg-block">#Deporte #Running #SaliACorrer #Adidas #Nike</p>
-                        <p>#NewBalance #marathon #training #runners #valentinSanjuan</p>
+                        <p class="d-none d-lg-block text-dark">#Deporte #Running #SaliACorrer #Adidas #Nike</p>
+                        <p class="text-dark">#NewBalance #marathon #training #runners #valentinSanjuan</p>
                     </div>
                     <div class="col-2 footer-p">
-                        <p class="ms-lg-5">Maratón5Kms</p>
-                        <p class="ms-lg-5">Carrera20Kms</p>
-                        <p class="ms-lg-5">MediaMaraton</p>
-                        <p class="ms-lg-5">Carrera15Kms</p>
+                        <p class="ms-lg-5 text-dark">Maratón5Kms</p>
+                        <p class="ms-lg-5 text-dark">Carrera20Kms</p>
+                        <p class="ms-lg-5 text-dark">MediaMaraton</p>
+                        <p class="ms-lg-5 text-dark">Carrera15Kms</p>
                     </div>
                     <div class="col-2 text-center">
                            <img class="logo-footer" src="./assets/images/icons8-copyleft-30.png" alt="" srcset="">
@@ -366,7 +374,7 @@
           </div>
         </div>
       </div>
-
+    <script src="./../light-switch-bootstrap/switch.js"></script>
     <script src="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
