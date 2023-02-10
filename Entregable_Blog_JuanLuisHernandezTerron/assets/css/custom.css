@@ -1,0 +1,21 @@
+#lightSwitch {
+  transform: scale(1.8);
+}
+
+.custom-theme .bg-light {
+  border-radius: 3px;
+  color: rgb(0, 0, 0) !important;
+  text-decoration: underline;
+}
+
+.custom-theme .bg-dark {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: overline;
+}
+
+.negro{
+  color: black;
+}
+.blanco{
+  color: white;
+}
