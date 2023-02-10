@@ -18,7 +18,7 @@
     <!--INICIO-VIDEO-->
     <div class="container-fluid" id="body-video">
         <div class="row">
-            <div class="col-10" id="video">
+            <div class="col-12" id="video">
                 <button type="button" id="boton" class="btn-close" data-bs-dismiss="button" aria-label="Close"></button>
                 <video autoplay loop id="myVideo" class="w-100" controls>
                     <source class="video" src="./assets/images/Vídeo sin título ‐ Hecho con Clipchamp.mp4" type="video/mp4">
@@ -27,19 +27,28 @@
                     <p>!RUNNERS , TU ORGANIZADOR DE EVENTOS PREFERIDO¡</p>
                 </div>
             </div>
-            <div class="col-2">
-                
-            </div>
+
         </div>
     </div>
     <!--Fin-video-->
     <div id="body" class="container-fluid bg-dark">
         <header class="row justify-content-center text-center">
-            <div class="row col-12 text-center">
+            <div class="row col-8 ms-auto text-center">
                 <img class="logo-header img-fluid" src="./assets/images/26502001a00415391db0e8bedb1a1d57.svg" alt="logo runner web">
             </div>
+            <div class="col-2">
+                <div class="row">
+                    <i class="bi bi-brightness-high d-inline"></i>
+                    <i class="bi bi-moon me-4 d-inline"></i>
+                </div>
+                <div class="row">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input ms-5 mt-5" type="checkbox" id="lightSwitch" />
+                    </div>
+                </div>
+            </div>
             <div class="row col-12">
-                <h2 class="col-12">RUNNERS</h2>
+                <h2>RUNNERS</h2>
             </div>
         </header>
         <div class="row sticky-top">
@@ -84,12 +93,6 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item justify-content-right w-auto d-sm-block d-md-inline">
-                                <div class="form-check form-switch">
-                                    <label class="form-check-label" for="lightSwitch"> Dark Mode </label>
-                                    <input class="form-check-input" type="checkbox" id="lightSwitch" />
-                                  </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -100,8 +103,8 @@
             <div class="row">
                 <div class="col-12" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item cachosPan"><a href="./app.html">Inicio</a></li>
-                      <li class="breadcrumb-item cachosPan"><a href="./app.html">Entradas</a></li>
+                      <li class="breadcrumb-item cachosPan"><a href="./app.html" class="text-dark">Inicio</a></li>
+                      <li class="breadcrumb-item cachosPan"><a href="./app.html" class="text-dark">Entradas</a></li>
                     </ol>
                 </div>
             </div>

@@ -279,7 +279,9 @@ footer{
         font-size: 12px;
     }
 }
-
+.footer-p p{
+    color: white !important;
+}
 /*7.Registro*/
 .cancelar{
     height: 50px;
