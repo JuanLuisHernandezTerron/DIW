@@ -10,20 +10,31 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+
     <title>Eventos Nexo Runnig</title>
 </head>
 <body>
     <div class="container-fluid">
         <header class="row justify-content-center text-center">
-            <div class="row col-12 text-center">
+            <div class="row col-8 ms-auto text-center">
                 <img class="logo-header img-fluid" src="./assets/images/26502001a00415391db0e8bedb1a1d57.svg" alt="logo runner web">
             </div>
+            <div class="col-2">
+                <div class="row mt-5 m-auto">
+                    <i class="col-2 bi bi-brightness-high d-inline me-2 text-light i-sol"></i>
+                    <i class="col-2 bi bi-moon  d-inline ms-1 text-light i-luna"></i>
+                    <div class="form-check form-switch col-9 m-auto">
+                        <input class="form-check-input " type="checkbox" id="lightSwitch" />
+                    </div>
+                </div>
+            </div>
             <div class="row col-12">
-                <h2 class="col-12">RUNNERS</h2>
+                <h2 class="text-light">RUNNERS</h2>
             </div>
         </header>
         <div class="row sticky-top">
-            <nav class="col-12 navbar-expand-md navbar navbar-dark bg-dark ">
+            <nav class="col-12 navbar-expand-md navbar navbar-dark bg-dark">
                 <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -35,31 +46,29 @@
                     <div class="offcanvas-body navbar-expand-md">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 me-auto mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item">
-                                <a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#LoginModal" aria-current="page">Login</a>
+                                <a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#LoginModal" aria-current="page" >Login</a>
                             </li>
                             <li class="nav-item ms-md-3">
-                                <a href="./register.html" class="nav-link active" aria-current="page">Register</a>
+                                <a href="./register.html" class="nav-link active"  aria-current="page">Register</a>
                             </li>
                             <li class="nav-item ms-md-3">
-                                <a href="./app.html" class="nav-link active" aria-current="page">Entradas</a>
+                                <a href="" class="nav-link active" aria-current="page">Entradas</a>
                             </li>
                             <li class="nav-item mt-md-1 ms-2 mb-2 anadirEntrada d-block ms-md-3">
-                                <i class="bi bi-plus-circle logoPlus" aria-label="Añadir nueva entrada"></i>
-                                <p class="content"></p>
+                                <i class="bi bi-plus-circle logoPlus text-light"></i>
+                                <p class="content text-light" ></p>
                             </li>
                             <li class="nav-item d-block buscadores justify-content-center align-items-center ms-md-3">
                                 <p class="parrafoInput">
-                                    <span class="ms-5 div d-none d-md-inline">|</span>
-                                    <span class="ms-5 d-md-none" aria-label="Crear nueva entrada">Crear Nueva Entrada</span>
+                                    <span class="ms-5 div d-none d-md-inline text-light">|</span>
+                                    <span class="ms-5 d-md-none text-light">Crear Nueva Entrada</span>
                                     <br class="d-md-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" aria-label="lupa-buscador" role="button" width="20" height="40" fill="currentColor" class="bi bi-search ms-2 ms-md-5 foto-lupa" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                    </svg>
-                                    <span class="ms-5 d-md-none">Buscador</span>
+                                    <i class="bi bi-search mt-2 ms-2 ms-md-5 foto-lupa text-light" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search"></i>
+                                    <span class="ms-5 d-md-none text-light">Buscador</span>
                                 </p>
                             </li>
                             <li class="nav-item ms-4 w-auto d-sm-block d-md-inline">
-                                <div class="collapse collapse-horizontal inputTxt" id="search">
+                                <div class="collapse collapse-horizontal mt-1" id="search">
                                     <input placeholder="Buscame...." type="text" name="buscado" id="buscadorSearch">
                                     <div class="d-inline" data-bs-theme="dark">
                                         <button type="button" class="btn-close ms-2" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#search"></button>
@@ -76,15 +85,15 @@
             <div class="row">
                 <div class="col-12" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item cachosPan"><a href="./app.html">Inicio</a></li>
-                      <li class="breadcrumb-item cachosPan"><a href="./app.html">Entradas</a></li>
-                      <li class="breadcrumb-item cachosPan"><a href="./register.html">Register</a></li>
+                      <li class="breadcrumb-item cachosPan text-dark"><a href="./app.html">Inicio</a></li>
+                      <li class="breadcrumb-item cachosPan text-dark"><a href="./app.html">Entradas</a></li>
+                      <li class="breadcrumb-item cachosPan text-dark"><a href="./register.html">Register</a></li>
                     </ol>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <h2 class="text-center section-tittle">Registro</h2>
+                    <h2 class="text-center section-tittle text-light">Registro</h2>
                     <hr class="m-auto">
                 <form action="">
                     <div class="row mt-2 ms-md-5">
@@ -146,36 +155,36 @@
                     </div>
                     <div class="row mt-5 ms-5 text-center">
                         <div class="col-6">
-                           <button type="button" class="w-50 cancelar">Cancelar</button>
+                           <button type="button" class="w-50 cancelar text-light">Cancelar</button>
                         </div>
                         <div class="col-6">
-                            <button type="submit" class="w-50 enviar">Enviar</button>
+                            <button type="submit" class="w-50 enviar text-light">Enviar</button>
                         </div>
                     </div>
                 </form>
                 </div>
                 <div class="col-12 col-md-4 g-2">
                     <div class="row">
-                        <h2 class="text-center tittle-aside mt-3 m-md-0">Promociones</h2>
+                        <h2 class="text-center tittle-aside mt-3 m-md-0 text-light">Promociones</h2>
                     </div>
                     <hr class="m-auto mb-2">
                     <div class="row justify-content-center ">
                         <img class="img-fluid w-100 img-banner" src="./assets/images/seville-106852_960_720.png" alt="Foto de la torre del oro de sevilla, con descuentos sobre variados maratones / carreras" />
                     </div>
                     <div class="row mt-5">
-                        <h2 class="text-center tittle-aside m-md-0">Redes Sociales</h2>
+                        <h2 class="text-center tittle-aside m-md-0 text-light">Redes Sociales</h2>
                     </div>
                     <hr class="m-auto mb-2">
                     <div class="row">
                         <div class="col-12 d-block d-md-inline text-center">
-                            <i class="bi bi-facebook redes" aria-label="facebook"></i>
-                            <i class="bi bi-instagram redes ms-3" aria-label="instagram"></i>
-                            <i class="bi bi-youtube redes ms-3" aria-label="youtube"></i>
-                            <i class="bi bi-linkedin redes ms-3" aria-label="link edin"></i>
+                            <i class="bi bi-facebook redes text-light" aria-label="facebook"></i>
+                            <i class="bi bi-instagram redes ms-3 text-light" aria-label="instagram"></i>
+                            <i class="bi bi-youtube redes ms-3 text-light" aria-label="youtube"></i>
+                            <i class="bi bi-linkedin redes ms-3 text-light" aria-label="link edin"></i>
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <h2 class="text-center tittle-aside m-md-0">Noticias</h2>
+                        <h2 class="text-center tittle-aside m-md-0 text-light">Noticias</h2>
                     </div>
                     <hr class="m-auto mb-2">
                     <div class="row mt-4 mb-5">
@@ -290,6 +299,7 @@
           </div>
         </div>
       </div>
+    <script src="assets/js/switch.js"></script>
     <script src="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

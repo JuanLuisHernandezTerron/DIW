@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./../light-switch-bootstrap/custom.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
     <script defer src="./assets/js/utils.js"></script>
     <title>Eventos Nexo Runnig</title>
 </head>
@@ -19,7 +19,7 @@
     <div class="container-fluid" id="body-video">
         <div class="row">
             <div class="col-12" id="video">
-                <button type="button" id="boton" class="btn-close" data-bs-dismiss="button" aria-label="Close"></button>
+                <button type="button" id="boton" class="btn-close text-light" data-bs-dismiss="button" aria-label="Close"></button>
                 <video autoplay loop id="myVideo" class="w-100" controls>
                     <source class="video" src="./assets/images/Vídeo sin título ‐ Hecho con Clipchamp.mp4" type="video/mp4">
                 </video>
@@ -37,18 +37,16 @@
                 <img class="logo-header img-fluid" src="./assets/images/26502001a00415391db0e8bedb1a1d57.svg" alt="logo runner web">
             </div>
             <div class="col-2">
-                <div class="row">
-                    <i class="bi bi-brightness-high d-inline"></i>
-                    <i class="bi bi-moon me-4 d-inline"></i>
-                </div>
-                <div class="row">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input ms-5 mt-5" type="checkbox" id="lightSwitch" />
+                <div class="row mt-5 m-auto">
+                    <i class="col-2 bi bi-brightness-high d-inline me-2 text-light i-sol"></i>
+                    <i class="col-2 bi bi-moon  d-inline ms-1 text-light i-luna"></i>
+                    <div class="form-check form-switch col-9 m-auto">
+                        <input class="form-check-input " type="checkbox" id="lightSwitch" />
                     </div>
                 </div>
             </div>
             <div class="row col-12">
-                <h2>RUNNERS</h2>
+                <h2 class="text-light">RUNNERS</h2>
             </div>
         </header>
         <div class="row sticky-top">
@@ -70,19 +68,19 @@
                                 <a href="./register.html" class="nav-link active"  aria-current="page">Register</a>
                             </li>
                             <li class="nav-item ms-md-3">
-                                <a href="" class="nav-link active" aria-current="page" >Entradas</a>
+                                <a href="" class="nav-link active" aria-current="page">Entradas</a>
                             </li>
                             <li class="nav-item mt-md-1 ms-2 mb-2 anadirEntrada d-block ms-md-3">
                                 <i class="bi bi-plus-circle logoPlus text-light"></i>
-                                <p class="content" ></p>
+                                <p class="content text-light" ></p>
                             </li>
                             <li class="nav-item d-block buscadores justify-content-center align-items-center ms-md-3">
                                 <p class="parrafoInput">
                                     <span class="ms-5 div d-none d-md-inline text-light">|</span>
-                                    <span class="ms-5 d-md-none">Crear Nueva Entrada</span>
+                                    <span class="ms-5 d-md-none text-light">Crear Nueva Entrada</span>
                                     <br class="d-md-none">
                                     <i class="bi bi-search mt-2 ms-2 ms-md-5 foto-lupa text-light" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search"></i>
-                                    <span class="ms-5 d-md-none">Buscador</span>
+                                    <span class="ms-5 d-md-none text-light">Buscador</span>
                                 </p>
                             </li>
                             <li class="nav-item ms-4 w-auto d-sm-block d-md-inline">
@@ -102,7 +100,7 @@
         <div class="container body">
             <div class="row">
                 <div class="col-12" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb ">
                       <li class="breadcrumb-item cachosPan"><a href="./app.html" class="text-dark">Inicio</a></li>
                       <li class="breadcrumb-item cachosPan"><a href="./app.html" class="text-dark">Entradas</a></li>
                     </ol>
@@ -255,10 +253,10 @@
                     <hr class="m-auto mb-2">
                     <div class="row">
                         <div class="col-12 d-block d-md-inline text-center">
-                            <i class="bi bi-facebook redes" aria-label="facebook"></i>
-                            <i class="bi bi-instagram redes ms-3" aria-label="instagram"></i>
-                            <i class="bi bi-youtube redes ms-3" aria-label="youtube"></i>
-                            <i class="bi bi-linkedin redes ms-3" aria-label="link edin"></i>
+                            <i class="bi bi-facebook redes text-light" aria-label="facebook"></i>
+                            <i class="bi bi-instagram redes ms-3 text-light" aria-label="instagram"></i>
+                            <i class="bi bi-youtube redes ms-3 text-light" aria-label="youtube"></i>
+                            <i class="bi bi-linkedin redes ms-3 text-light" aria-label="link edin"></i>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -377,7 +375,7 @@
           </div>
         </div>
       </div>
-    <script src="./../light-switch-bootstrap/switch.js"></script>
+    <script src="assets/js/switch.js"></script>
     <script src="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

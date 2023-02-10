@@ -62,6 +62,14 @@ p,h5,hr{
     display: block;
 }
 /*1.HEADER*/
+.i-sol{
+    font-size: 22px;
+}
+
+.i-luna{
+    font-size: 22px;
+}
+
 .logo-header{
     width: 15%;
     margin: auto;
