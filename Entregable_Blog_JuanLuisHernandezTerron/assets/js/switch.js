@@ -23,7 +23,7 @@
     });
 
     document.body.className='bg-dark';
-
+  
     if (document.body.classList.contains('text-dark')) {
       document.body.classList.replace('text-dark', 'text-light');
     } 
@@ -56,6 +56,8 @@
      });
 
     document.body.className='bg-light';
+
+
 
     if (document.body.classList.contains('text-light')) {
       document.body.classList.replace('text-light', 'text-dark');

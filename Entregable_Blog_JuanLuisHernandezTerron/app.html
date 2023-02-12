@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script defer src="assets/js/switch.js"></script>
     <script defer src="./assets/js/utils.js"></script>
     <title>Eventos Nexo Runnig</title>
 </head>
@@ -19,9 +20,9 @@
     <div class="container-fluid" id="body-video">
         <div class="row">
             <div class="col-12" id="video">
-                <button type="button" id="boton" class="btn-close text-light" data-bs-dismiss="button" aria-label="Close"></button>
-                <video autoplay loop id="myVideo" class="w-100" controls>
-                    <source class="video" src="./assets/images/Vídeo sin título ‐ Hecho con Clipchamp.mp4" type="video/mp4">
+                <button type="button" id="boton" class="btn-close text-bg-light" data-bs-dismiss="button" aria-label="Close"></button>
+                <video autoplay muted loop id="myVideo" class="w-100" controls>
+                    <source class="video" src="./assets/images/VídeosintítuloHechoconClipchamp.mp4" type="video/mp4">
                 </video>
                 <div class="mt-5 content2 justify-content-center align-items-center">
                     <p>!RUNNERS , TU ORGANIZADOR DE EVENTOS PREFERIDO¡</p>
@@ -38,8 +39,8 @@
             </div>
             <div class="col-2">
                 <div class="row mt-5 m-auto">
-                    <i class="col-2 bi bi-brightness-high d-inline me-2 text-light i-sol"></i>
-                    <i class="col-2 bi bi-moon  d-inline ms-1 text-light i-luna"></i>
+                    <i class="col-2 p-0 p-md-1 bi bi-brightness-high d-inline me-2 text-light i-sol"></i>
+                    <i class="col-2 p-0 p-md-1 bi bi-moon  d-inline ms-1 text-light i-luna"></i>
                     <div class="form-check form-switch col-9 m-auto">
                         <input class="form-check-input " type="checkbox" id="lightSwitch" />
                     </div>
@@ -55,31 +56,31 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas offcanvas-end text-bg-light bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbar">
                     <div class="offcanvas-header">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white text-bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body navbar-expand-md">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 me-auto mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item">
-                                <a href="" class="nav-link active" data-bs-toggle="modal" data-bs-target="#LoginModal" aria-current="page" >Login</a>
+                                <a href="" class="nav-link active text-light" data-bs-toggle="modal" data-bs-target="#LoginModal" aria-current="page" >Login</a>
                             </li>
                             <li class="nav-item ms-md-3">
-                                <a href="./register.html" class="nav-link active"  aria-current="page">Register</a>
+                                <a href="./register.html" class="nav-link active text-light"  aria-current="page">Register</a>
                             </li>
                             <li class="nav-item ms-md-3">
-                                <a href="" class="nav-link active" aria-current="page">Entradas</a>
+                                <a href="" class="nav-link active text-light" aria-current="page">Entradas</a>
                             </li>
                             <li class="nav-item mt-md-1 ms-2 mb-2 anadirEntrada d-block ms-md-3">
                                 <i class="bi bi-plus-circle logoPlus text-light"></i>
-                                <p class="content text-light" ></p>
+                                <p class="content text-light"></p>
                             </li>
                             <li class="nav-item d-block buscadores justify-content-center align-items-center ms-md-3">
                                 <p class="parrafoInput">
                                     <span class="ms-5 div d-none d-md-inline text-light">|</span>
                                     <span class="ms-5 d-md-none text-light">Crear Nueva Entrada</span>
                                     <br class="d-md-none">
-                                    <i class="bi bi-search mt-2 ms-2 ms-md-5 foto-lupa text-light" viewBox="0 0 16 16" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search"></i>
+                                    <i class="bi bi-search mt-2 ms-2 ms-md-5 foto-lupa text-light" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" role="img"  aria-controls="search"></i>
                                     <span class="ms-5 d-md-none text-light">Buscador</span>
                                 </p>
                             </li>
@@ -87,7 +88,7 @@
                                 <div class="collapse collapse-horizontal mt-1" id="search">
                                     <input placeholder="Buscame...." type="text" name="buscado" id="buscadorSearch">
                                     <div class="d-inline" data-bs-theme="dark">
-                                        <button type="button" class="btn-close ms-2" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#search"></button>
+                                        <button type="button" class="btn-close ms-2 text-bg-light" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#search"></button>
                                     </div>
                                 </div>
                             </li>
@@ -122,14 +123,14 @@
                                         <p class="ms-3 text-start mb-0">Media Maratón</p>
                                     </div>
                                     <div class="col-2">
-                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="75 visitas">75</span></i>
+                                        <i class="bi bi-eye icons"><span class="text-end" aria-label="75 visitas">75</span></i>
                                     </div>
                                     <div class="col-3">
                                         <i class="bi bi-suit-heart-fill icons"><span class="text-end me-1" aria-label="10 favoritos">10</span></i>
                                     </div>
                                 </div>
                                 <h5>Media Maratón Madrid</h5>
-                                <p class="parrafos ms-3 me-3">El domingo 22 de enero se celebró la segunda sesión de entrenamiento presencial para el Movistar Madrid Medio Maratón con un gran éxito de participación, se espera que en los proximos años aumente la participación.</p>
+                                <p class="parrafos ms-3 me-3">El domingo 22 de enero se celebró la <abbr title="Esta edición es de las más esperadas">segunda sesión </abbr>de entrenamiento presencial para el <em>Movistar Madrid Medio Maratón</em> con un gran éxito de participación, se espera que en los proximos años aumente la participación.</p>
                                 <hr class="ms-4 mb-2">
                                 <div class="row">
                                     <div class="col-8">
@@ -151,7 +152,7 @@
                                         <p class="ms-3 text-start mb-0">Maratón</p>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="10563 visitas">10563</span></i>
+                                        <i class="bi bi-eye icons"><span class="text-end" aria-label="10563 visitas">10563</span></i>
                                     </div>
                                     <div class="col-3">
                                         <i class="bi bi-suit-heart-fill icons"><span class="text-end me-1" aria-label="1522 favoritos">1522</span></i>
@@ -159,7 +160,7 @@
                                 </div>
                                 <h5>Maratón Barcelona</h5>
                                 <p class="parrafos ms-3 me-3">
-                                    Ya son 12.000 los corredores inscritos para la Zurich Marató Barcelona del próximo 19 de marzo, una cifra que permite a la organización soñar con llegar a las 15.000 inscripciones para una 44ª edición.
+                                    Ya son 12.000 los corredores inscritos para la <em>Zurich Marató Barcelona</em> del próximo 19 de marzo, una cifra que permite a la organización soñar con llegar a las 15.000 inscripciones para una 44ª edición.
                                 </p>
                                 <hr class="ms-4 mb-2">
                                 <div class="row">
@@ -176,7 +177,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-6 text-center hoverInfo1 g-2 mb-5">
                             <picture>
-                                <img src="./assets/images/tower-2064129_1920 (1).jpg" class="img-fluid imagenEvent1 w-75" alt="carerra-popular-sevilla">
+                                <img src="./assets/images/tower2064129_1920.jpg" class="img-fluid imagenEvent1 w-75" alt="carerra-popular-sevilla">
                             </picture>
                             <div class="infoIMG1">
                                 <div class="row mb-2">
@@ -184,7 +185,7 @@
                                         <p class="ms-3 text-start mb-0">Carrera Popular</p>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="5523 visitas">5523</span></i>
+                                        <i class="bi bi-eye icons"><span class="text-end" aria-label="5523 visitas">5523</span></i>
                                     </div>
                                     <div class="col-3">
                                         <i class="bi bi-suit-heart-fill icons"><span class="text-end me-1 ms-1" aria-label="224 favoritos">224</span></i>
@@ -207,7 +208,7 @@
                         </div>
                         <div class="col-12 col-lg-6 text-center hoverInfo1 g-2 mb-5">
                             <picture>
-                                <img src="./assets/images/city-gfdcc6bb0b_1920 (1).jpg" class="img-fluid imagenEvent1 w-75" alt="media maratón Torremolinos">
+                                <img src="./assets/images/citygfdcc6bb0b_1920.jpg" class="img-fluid imagenEvent1 w-75" alt="media maratón Torremolinos">
                             </picture>
                             <div class="infoIMG1">
                                 <div class="row mb-2">
@@ -215,7 +216,7 @@
                                         <p class="ms-3 text-start mb-0">Media Maratón</p>
                                     </div>
                                     <div class="col-3">
-                                        <i class="bi bi-eye icons"><span classs="text-end" aria-label="150 visitas">150</span></i>
+                                        <i class="bi bi-eye icons"><span class="text-end" aria-label="150 visitas">150</span></i>
                                     </div>
                                     <div class="col-3">
                                         <i class="bi bi-suit-heart-fill icons"><span class="text-end ms-1 me-1" aria-label="56 favoritos">56</span></i>
@@ -223,7 +224,7 @@
                                 </div>
                                 <h5>Media Maratón Torremolinos</h5>
                                 <p class="parrafos ms-3 me-3">
-                                    La media maratón Torremolinos está promovida por el Patronato Municipal y se celebrará el 5 de febrero de 2023, regresa una de las citas más longevas de la provincia malagueña, para encarar su trigesimotercera edición.
+                                    La <em>media maratón Torremolinos </em>está promovida por el Patronato Municipal y se celebrará el 5 de febrero de 2023, regresa una de las citas más longevas de la provincia malagueña, para encarar su trigesimotercera edición.
                                 </p>
                                 <hr class="ms-4 mb-2">
                                 <div class="row">
@@ -280,14 +281,14 @@
                                     </div>
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="./assets/images/stopwatch-g03c042216_1920 (1).jpg" class="d-block w-100" alt="reloj-tiempo correr correcto">
+                                    <img src="./assets/images/stopwatchg03c042216_1920(1).jpg" class="d-block w-100" alt="reloj-tiempo correr correcto">
                                     <div class="carousel-caption">
                                       <h5 class="introSlide">¿Tiempo para correr?</h5>
                                       <p class="texto-slide text-truncate">El trabajo diario siempre dure más de 45 minutos. Así se puede quemar grasa</p>
                                     </div>
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="./assets/images/joy-g52f2ddb4c_1920.jpg" class="d-block w-100"alt="Niña corriendo- obesidad infantil">
+                                    <img src="./assets/images/joy-g52f2ddb4c_1920.jpg" class="d-block w-100" alt="Niña corriendo- obesidad infantil">
                                     <div class="carousel-caption">
                                       <h5 class="introSlide">Obesidad Infantil</h5>
                                       <p class="texto-slide text-truncate">La obesidad infantil es una afección de salud grave que afecta a niños y adolescentes.</p>
@@ -335,7 +336,7 @@
                         <p class="ms-lg-5 text-dark">Carrera15Kms</p>
                     </div>
                     <div class="col-2 text-center">
-                           <img class="logo-footer" src="./assets/images/icons8-copyleft-30.png" alt="" srcset="">
+                           <img class="logo-footer" src="./assets/images/icons8-copyleft-30.png" alt="logo copyleft" srcset="./assets/images/icons8-copyleft-30.png">
                            <p class="footer-p">CopyLeft</p>
                     </div>
                 </div>
@@ -346,8 +347,7 @@
                     </div>
                 </div>
             </footer>
-           </div> 
-        </div>
+        </div> 
     </div>
     <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -357,25 +357,24 @@
               <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <form action="">
+                <form action="app.html">
                     <div class="input-group w-50 m-auto">
                         <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                       </div><br>
                       <div class="input-group w-50 m-auto">
-                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
-                        <input type="password" class="form-control mb-0" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon2"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="form-control mb-0" placeholder="Password" aria-label="Username" aria-describedby="basic-addon2">
                       </div><br>
                     <input type="checkbox" name="checboxLogin" id="loginCheck">
-                    <label class="mb-3 openSesion" for="">Session Open</label>
+                    <label class="mb-3 openSesion" for="SessionOpen">Session Open</label>
                     <a class="ms-2 enlaceOlvido" href="">¿Has olvidado la contrasaña?</a><br>
-                    <input class="text-center login w-50" type="button" value="Login" data-bs-dismiss="modal" aria-label="Close">
+                    <input class="text-center login w-50" id="SessionOpen" type="button" value="Login" data-bs-dismiss="modal" aria-label="Close">
                 </form>
             </div>
           </div>
         </div>
       </div>
-    <script src="assets/js/switch.js"></script>
     <script src="./assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
